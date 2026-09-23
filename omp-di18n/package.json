@@ -1,0 +1,10 @@
+{
+  "name": "omp-di18n",
+  "version": "1.0.0",
+  "description": "Runtime Chinese (zh-CN) localization extension for oh-my-pi",
+  "type": "module",
+  "license": "MIT",
+  "omp": {
+    "extensions": ["./omp-di18n.ts"]
+  }
+}

@@ -1,0 +1,11 @@
+This project's zh-CN translation dictionary (omp-di18n.zh-CN.json) is derived
+in part from the translation tables published at:
+
+    https://github.com/LiuQingHuaYang/oh-my-pi-zh
+
+That project is released under the MIT License:
+
+    Copyright (c) 2025 Mario Zechner
+    Copyright (c) 2025-2026 Can Bölük
+
+Upstream project: https://github.com/can1357/oh-my-pi (MIT License)

@@ -1,0 +1,22 @@
+{
+  "name": "omp-di18n",
+  "owner": {
+    "name": "losewayy"
+  },
+  "metadata": {
+    "description": "Runtime Chinese (zh-CN) localization for oh-my-pi",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "omp-di18n",
+      "source": "./omp-di18n",
+      "description": "Localizes the oh-my-pi TUI to Simplified Chinese at runtime — no fork, no rebuild, works on the official binary.",
+      "version": "1.0.0",
+      "author": { "name": "losewayy" },
+      "license": "MIT",
+      "keywords": ["i18n", "localization", "chinese", "zh-CN", "l10n"],
+      "category": "productivity"
+    }
+  ]
+}

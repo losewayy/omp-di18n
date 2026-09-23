@@ -1,0 +1,4 @@
+# Runtime artifacts generated next to the extension
+omp-di18n.misses.txt
+omp-di18n-debug.txt
+*.bak
