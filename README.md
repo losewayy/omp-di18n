@@ -62,6 +62,14 @@ omp plugin install github:losewayy/omp-di18n
 - 所有 patch 独立容错，单个失效不影响其余部分
 - 已在 omp v18.2.x 上验证（Windows；macOS/Linux 理论一致，欢迎反馈）
 
+## 常见问题
+
+**安装后仍显示英文？** 请先重启 omp，确认扩展已加载；进入会话后可执行 `/di18n` 查看汉化状态，并用 `/di18n on` 确认汉化已开启。
+
+**只有部分界面没有翻译？** 上游新增的文案可能尚未收录。可以执行 `/di18n misses` 查看未命中记录的位置，并在提交 Issue 时附上 `omp-di18n.misses.txt`，方便补充字典。
+
+**修改字典后如何生效？** 在会话中执行 `/di18n reload` 热重载字典，无需重新安装扩展。
+
 ## 工作原理
 
 扩展在 omp 启动时加载，patch `pi-tui`/`pi-coding-agent` 导出的 UI 组件渲染入口，按"精确匹配 → 模板匹配 → ANSI 分段 → 动态规则"的顺序查找 `omp-di18n.zh-CN.json` 字典进行替换，并保持终端显示宽度以维持边框对齐。聊天内容类组件（消息、代码、diff）仅做精确匹配，不会误翻模型输出。
